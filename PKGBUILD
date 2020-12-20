@@ -6,11 +6,11 @@
 buildarch=8
 
 pkgbase=linux-raspberrypi4-aarch64
-_commit=9797f1a4938c20139b00a25de93cc99efb5c291b
+_commit=967d45b29ca2902f031b867809d72e3b3d623e7a
 _srcname=linux-${_commit}
 _kernelname=${pkgbase#linux}
 _desc="Raspberry Pi 4"
-pkgver=5.4.79
+pkgver=rpi-5.10.y
 pkgrel=1
 arch=('aarch64')
 url="http://www.kernel.org/"
