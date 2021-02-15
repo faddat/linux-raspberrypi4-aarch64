@@ -1,0 +1,14 @@
+name: kernel
+on: [push, pull_request]
+
+jobs:
+
+  pkgbuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: makepkg
+        run: |
+          docker run -v $PWD:/pkg whynothugo/makepkg
+          ls -l -a
